@@ -1,0 +1,8 @@
+server:
+  port: 8180
+
+eureka:
+  client:
+    # Disables the server's own registration and fetching of registry
+    register-with-eureka: false
+    fetch-registry: false
