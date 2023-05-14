@@ -1,0 +1,21 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: config-server
+
+
+eureka:
+  client:
+    serviceUrl:
+      #Enter the URL of the Eureka server
+      defaultZone:  http://localhost:8180/eureka/
+
+    # This properties Control whether the client register with the Eureka server
+    register-with-eureka: true
+    # whether it fetches the registry from the server
+    fetch-registry: true
+    # whether it uses the IP address instead of the hostname to register with the server
+  instance:
+    prefer-ip-address: true
